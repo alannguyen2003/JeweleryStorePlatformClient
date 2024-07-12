@@ -3,17 +3,22 @@ import Collection from "../components/Layout/Carousel/Collection"
 import Header from "../components/Layout/Header/Header"
 import Advertisement from "../components/Layout/Carousel/Advertisement"
 import ProductSection from "../components/Layout/Carousel/ProductSection"
+import Banner from "../components/Layout/Carousel/Banner"
+import RecommendProduct from "../components/Layout/Carousel/RecommendProduct"
+import Footer from "../components/Layout/Footer/Footer"
 
 export const HomePage = () => { 
-const preLoader = function () {
-    let preloaderWrapper = document.getElementById("preloader");
-    preloaderWrapper.classList.add("loaded");
-};
-setTimeout(() => {
-    preLoader();
-}, 300);
+    const preLoader = function () {
+        let preloaderWrapper = document.getElementById("preloader");
+        preloaderWrapper.classList.add("loaded");
+    };
+    setTimeout(() => {
+        preLoader();
+    }, 300);
+
+
     return (
-        <div>
+        <body>
             <div id="preloader">
                 <div id="ctn-preloader" class="ctn-preloader">
                     <div class="animation-preloader">
@@ -58,7 +63,10 @@ setTimeout(() => {
             <Collection/>
             <Advertisement/>
             <ProductSection/>
+            <Banner/>
+            <RecommendProduct/>
+            <Footer/>
         </div>
-    </div>
+    </body>
     )
 }

@@ -1,62 +1,5 @@
+import { HomePageContext } from "../../../contexts/HomePageContext";
 export const Header = () => {
-
-    // OffCanvas Sidebar Activation
-function offcanvsSidebar(openTrigger, closeTrigger, wrapper) {
-    let OpenTriggerprimary__btn = document.querySelectorAll(openTrigger);
-    let closeTriggerprimary__btn = document.querySelector(closeTrigger);
-    let WrapperSidebar = document.querySelector(wrapper);
-    let wrapperOverlay = wrapper.replace(".", "");
-
-    function handleBodyclassNameName(evt) {
-        let eventTarget = evt.target;
-        if (!eventTarget.closest(wrapper) && !eventTarget.closest(openTrigger)) {
-            WrapperSidebar.classNameNameList.remove("active");
-            document
-                .querySelector("body")
-                .classNameNameList.remove(`${wrapperOverlay}_active`);
-        }
-    }
-    if (OpenTriggerprimary__btn && WrapperSidebar) {
-        OpenTriggerprimary__btn.forEach(function(singleItem) {
-            singleItem.addEventListener("click", function(e) {
-                if (e.target.dataset.offcanvas != undefined) {
-                    WrapperSidebar.classNameNameList.add("active");
-                    document
-                        .querySelector("body")
-                        .classNameNameList.add(`${wrapperOverlay}_active`);
-                    document.body.addEventListener("click", handleBodyclassNameName.bind(this));
-                }
-            });
-        });
-    }
-
-    if (closeTriggerprimary__btn && WrapperSidebar) {
-        closeTriggerprimary__btn.addEventListener("click", function(e) {
-            if (e.target.dataset.offcanvas != undefined) {
-                WrapperSidebar.classNameNameList.remove("active");
-                document
-                    .querySelector("body")
-                    .classNameNameList.remove(`${wrapperOverlay}_active`);
-                document.body.removeEventListener("click", handleBodyclassNameName.bind(this));
-            }
-        });
-    }
-}
-
-
-// Search Bar
-offcanvsSidebar(
-    ".search__open--btn",
-    ".predictive__search--close__btn",
-    ".predictive__search--box"
-);
-
-// Mini Cart
-offcanvsSidebar(
-    ".minicart__open--btn",
-    ".minicart__close--btn",
-    ".offCanvas__minicart"
-);
 
     return (
     <header className="header__section">
@@ -259,7 +202,7 @@ offcanvsSidebar(
                     <div className="header__account">
                         <ul className="header__account--wrapper d-flex align-items-center">
                             <li className="header__account--items  header__account--search__items d-none d-lg-block">
-                                <a className="header__account--btn search__open--btn" href="javascript:void(0)" data-offcanvas>
+                                <a className="header__account--btn search__open--btn" href="#">
                                     <span className="header__account--btn__icon">
                                         <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M16 16L11 11M12.6667 6.83333C12.6667 7.59938 12.5158 8.35792 12.2226 9.06565C11.9295 9.77339 11.4998 10.4164 10.9581 10.9581C10.4164 11.4998 9.77339 11.9295 9.06565 12.2226C8.35792 12.5158 7.59938 12.6667 6.83333 12.6667C6.06729 12.6667 5.30875 12.5158 4.60101 12.2226C3.89328 11.9295 3.25022 11.4998 2.70854 10.9581C2.16687 10.4164 1.73719 9.77339 1.44404 9.06565C1.15088 8.35792 1 7.59938 1 6.83333C1 5.28624 1.61458 3.80251 2.70854 2.70854C3.80251 1.61458 5.28624 1 6.83333 1C8.38043 1 9.86416 1.61458 10.9581 2.70854C12.0521 3.80251 12.6667 5.28624 12.6667 6.83333Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
@@ -296,7 +239,7 @@ offcanvsSidebar(
                                             <path d="M12.25 7.66667V4.33333C12.25 3.44928 11.8549 2.60143 11.1517 1.97631C10.4484 1.35119 9.49456 1 8.5 1C7.50544 1 6.55161 1.35119 5.84835 1.97631C5.14509 2.60143 4.75 3.44928 4.75 4.33333V7.66667M1.9375 6H15.0625L16 16H1L1.9375 6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>  
                                     </span>
-                                    <span className="items__count">2</span> 
+                                    <span className="items__count">3</span> 
                                 </a>
                             </li>
                         </ul>
