@@ -1,16 +1,23 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/HomePage";
+import { Shop } from "./pages/Shop";
+import { HomePageContextProvider } from "./contexts/HomePageContext";
+import { DemoContextProvider } from "./contexts/DemoContext";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />{" "}
-        </Routes>{" "}
-      </BrowserRouter>{" "}
+      <HomePageContextProvider>
+        <DemoContextProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/shop" element={<Shop/>}/>
+            </Routes>
+          </BrowserRouter>
+        </DemoContextProvider>
+      </HomePageContextProvider>
     </div>
   );
 }
