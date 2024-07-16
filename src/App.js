@@ -4,6 +4,7 @@ import { HomePage } from "./pages/HomePage";
 import { Shop } from "./pages/Shop";
 import { HomePageContextProvider } from "./contexts/HomePageContext";
 import { DemoContextProvider } from "./contexts/DemoContext";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/shop" element={<Shop/>}/>
+              <Route path="/authentication" element={<Login/>}/>
             </Routes>
           </BrowserRouter>
         </DemoContextProvider>

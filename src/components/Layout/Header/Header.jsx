@@ -124,12 +124,12 @@ export const Header = () => {
                                             </li>
                                             <li className="header__mega--menu__li">
                                                 <ul className="header__mega--sub__menu">
-                                                    <li className="header__mega--sub__menu_li"><a className="header__mega--sub__menu--title" href="my-account.html">My Account</a></li>
-                                                    <li className="header__mega--sub__menu_li"><a className="header__mega--sub__menu--title" href="my-account-2.html">My Account 2</a></li>
+                                                    <li className="header__mega--sub__menu_li"><a className="header__mega--sub__menu--title" href="/authentication">My Account</a></li>
+                                                    <li className="header__mega--sub__menu_li"><a className="header__mega--sub__menu--title" href="/authentication">My Account 2</a></li>
                                                     <li className="header__mega--sub__menu_li"><a className="header__mega--sub__menu--title" href="cart.html">Cart Page</a></li>
                                                     <li className="header__mega--sub__menu_li"><a className="header__mega--sub__menu--title" href="wishlist.html">Wishlist</a></li>
                                                     <li className="header__mega--sub__menu_li"><a className="header__mega--sub__menu--title" href="404.html">404 Page</a></li>
-                                                    <li className="header__mega--sub__menu_li"><a className="header__mega--sub__menu--title" href="login.html">Login Page</a></li>
+                                                    <li className="header__mega--sub__menu_li"><a className="header__mega--sub__menu--title" href="/authentication">Login Page</a></li>
                                                     <li className="header__mega--sub__menu_li"><a className="header__mega--sub__menu--title" href="faq.html">Faq Page</a></li>
                                                     <li className="header__mega--sub__menu_li"><a className="header__mega--sub__menu--title" href="privacy-policy.html">Privacy Policy</a></li>
                                                 </ul>
@@ -171,7 +171,7 @@ export const Header = () => {
                                         <li className="header__sub--menu__items"><a href="portfolio.html" className="header__sub--menu__link">Portfolio Page</a></li>
                                         <li className="header__sub--menu__items"><a href="wishlist.html" className="header__sub--menu__link">Wishlist Page</a></li>
                                         <li className="header__sub--menu__items"><a href="privacy-policy.html" className="header__sub--menu__link">Privacy Policy</a></li>
-                                        <li className="header__sub--menu__items"><a href="login.html" className="header__sub--menu__link">Login Page</a></li>
+                                        <li className="header__sub--menu__items"><a href="/authentication" className="header__sub--menu__link">Login Page</a></li>
                                         <li className="header__sub--menu__items"><a href="404.html" className="header__sub--menu__link">Error Page</a></li>
                                     </ul>
                                 </li>
@@ -204,7 +204,7 @@ export const Header = () => {
                                 </a>
                             </li>
                             <li className="header__account--items">
-                                <a className="header__account--btn d-sm-2-none" href="my-account.html">
+                                <a className="header__account--btn d-sm-2-none" href="/authentication">
                                     <span className="header__account--btn__icon">
                                         <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M16 16V14.3333C16 13.4493 15.6049 12.6014 14.9016 11.9763C14.1984 11.3512 13.2446 11 12.25 11H4.75C3.75544 11 2.80161 11.3512 2.09835 11.9763C1.39509 12.6014 1 13.4493 1 14.3333V16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
