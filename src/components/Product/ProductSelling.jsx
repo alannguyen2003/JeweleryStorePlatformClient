@@ -1,4 +1,6 @@
 export const ProductSelling = (props) => {
+
+    //api call product
     return ( 
         <div class="col-lg-3 col-md-4 col-sm-6 col-6 custom-col mb-30">
                             <div class="product__card">

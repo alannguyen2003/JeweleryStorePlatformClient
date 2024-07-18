@@ -1,7 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import Accessory from "../Accessories/Accessory";
+import axios from "axios";
+import URL from "../../../config/api";
 
 export const Collection = () => {
 
+    // const accessories = axios.get(URL + "")
 
     return ( 
         <section class="shop__collection--section section--padding">
@@ -41,12 +45,7 @@ export const Collection = () => {
                     >
                     <div>
                         <SwiperSlide class="swiper-slide">
-                            <div class="shop__collection--card text-center">
-                                <a class="shop__collection--link" href="shop.html">
-                                    <img class="shop__collection--img" src="assets/img/collection/collection7.webp" alt="icon-img"/>
-                                    <h3 class="shop__collection--title mb-0">Necklaces</h3>
-                                </a>
-                            </div>
+                            <Accessory name="Rings"/>
                         </SwiperSlide>
                         <SwiperSlide class="swiper-slide">
                             <div class="shop__collection--card text-center">
