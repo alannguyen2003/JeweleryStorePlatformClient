@@ -1,0 +1,52 @@
+.size-btn {
+    border: none;
+    outline: none;
+    background-color: white;
+}
+.size-btn:hover {
+    color: #c97f5f;
+    font-size: 20px;
+    font-weight: 600;
+}
+.size-chosen-btn {
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #c97f5f;
+    font-weight: 600;
+}
+
+.product-title {
+    font-weight: 600;
+    display: flex;
+    justify-self: start;
+    margin-bottom: 24px;
+}
+.product-list-choose {
+    display: flex;
+    flex-direction: row;
+}
+.case-btn {
+    position: relative;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.case-btn img {
+    width: 80px;
+    transition: transform 0.3s ease;
+}
+
+.case-btn img:hover {
+    transform: scale(1.5);
+    z-index: 10;
+}
+
+.case-img-chosen {
+    transform: scale(1.0);
+    z-index: 10;
+    border: 1px solid #c97f5f;
+    border-radius: 5px;
+}

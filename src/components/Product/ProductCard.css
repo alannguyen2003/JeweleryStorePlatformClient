@@ -1,0 +1,7 @@
+.add-cart-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+}
