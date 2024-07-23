@@ -1,0 +1,8 @@
+.header-login-signup {
+    font-size: 16px;
+}
+.header-login-signup:hover {
+    font-weight: 600;
+    color: #c97f5f;
+    cursor: pointer;
+}
