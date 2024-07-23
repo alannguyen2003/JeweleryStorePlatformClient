@@ -1,0 +1,12 @@
+.cart-price {
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    font-weight: 600;
+}
+.total {
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    font-weight: 600;
+}
