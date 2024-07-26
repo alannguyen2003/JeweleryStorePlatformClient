@@ -6,9 +6,6 @@ import SignUpScreen from "../components/Layout/Authentication/SignUpScreen";
 import Footer from "../components/Layout/Footer/Footer";
 export const Login = () => {
 
-    function login(formData) {
-        
-    }
     return (
         <body>
             <Preloader/>
